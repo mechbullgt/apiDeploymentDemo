@@ -11,7 +11,8 @@ const router = new Router()
  * to access this endpoint.
  */
 /**
- * @apiDefine admin Admin access only
+
+* @apiDefine admin Admin access only
  * You must pass `access_token` parameter or a Bearer Token authorization header
  * to access this endpoint.
  */
