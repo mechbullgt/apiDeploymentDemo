@@ -2,22 +2,22 @@
 import path from 'path'
 import merge from 'lodash/merge'
 
-/* istanbul ignore next */
-const requireProcessEnv = (name) => {
-  if (!process.env[name]) {
-    throw new Error('You must set the ' + name + ' environment variable')
-  }
-  return process.env[name]
-}
+// /* istanbul ignore next */
+// const requireProcessEnv = (name) => {
+//   if (!process.env[name]) {
+//     throw new Error('You must set the ' + name + ' environment variable')
+//   }
+//   return process.env[name]
+// }
 
-/* istanbul ignore next */
-if (process.env.NODE_ENV !== 'production') {
-  const dotenv = require('dotenv-safe')
-  dotenv.load({
-    path: path.join(__dirname, '../.env'),
-    sample: path.join(__dirname, '../.env.example')
-  })
-}
+// /* istanbul ignore next */
+// if (process.env.NODE_ENV !== 'production') {
+//   const dotenv = require('dotenv-safe')
+//   dotenv.load({
+//     path: path.join(__dirname, '../.env'),
+//     sample: path.join(__dirname, '../.env.example')
+//   })
+// }
 
 const config = {
   all: {
